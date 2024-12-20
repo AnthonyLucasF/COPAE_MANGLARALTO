@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/style_inicio.css">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.css" />
+</head>
+<body>
+    <header class="header_section">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html">
+                    <span>COPAE</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="recomendaciones.html">Recomendaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="GestiondeRiesgo.html">Gestion de Riesgo</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <section class="about_section layout_padding">
+            <div class="container">
+                <div class="custom_heading-container">
+                    <h3>Bienvenido a la "Comisión Parroquial para Emergencias"</h3>
+                </div>
+                <p class="layout_padding2-top">
+                    Explora nuestra plataforma para obtener información actualizada sobre el programa de gestión de riesgos, recomendaciones y más. La "Comisión Parroquial para Emergencias" está comprometida con la seguridad y bienestar de la comunidad.
+                </p>
+            </div>
+        </section>
+
+        <section class="about-us"> 
+            <div class="us">
+                <h2><b>Conoce más sobre nosotros</b></h2><br>
+            </div>  
+
+            <div class="slider-frame">
+                <ul>
+                    <li><img src="img_copae/5.jpg" alt=""></li>
+                    <li><img src="img_copae/2.jpg" alt=""></li>
+                    <li><img src="img_copae/3.jpg" alt=""></li>
+                    <li><img src="img_copae/4.jpg" alt=""></li>
+                    <li><img src="img_copae/6.jpg" alt=""></li>
+                </ul>
+            </div>
+
+            <p>El "COPAE" son las comisiones parroquiales de atención de emergencias con el propósito específico de coordinar y responder a situaciones de emergencia. Estas comisiones son creadas para abordar diversos tipos de emergencias, como desastres naturales, crisis humanitarias o cualquier evento que requiera una respuesta inmediata y coordinada a nivel local.</p>
+        </section>
+
+        <div class="card">
+            <br><h2 class="titulo"><b>NOTA:</b></h2>
+            <p id="nota">Si eres residente de Manglaralto y deseas informarte sobre el servicio de eventos y emergencias que brindamos por favor haz clic en el siguiente botón:</p>
+            <div>
+                <button onclick="window.location.href='GestiondeRiesgo.html'" class="btnriesgo">
+                    <i class='fas fa-band-aid'></i>Gestion de Riesgo
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script>
+        document.querySelector('.navbar-toggler').addEventListener('click', function () {
+            document.querySelector('#navbarNav').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

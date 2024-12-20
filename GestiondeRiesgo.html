@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+    <title>Gestion de Riesgo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/style_GestiondeRiesgo.css">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.css" />
+</head>
+
+<body>
+    <header class="header_section">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html">
+                    <span>COPAE</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="recomendaciones.html">Recomendaciones</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="GestiondeRiesgo.html">Gestion de Riesgo</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <section class="about_section layout_padding">
+            <div class="container">
+                <div class="custom_heading-container">
+                    <h2><b>Gestión de Riesgo</b></h2><br>
+                </div>
+                <p class="layout_padding2-top">
+                        Este programa se enfoca en fortalecer comunidades y reducir su vulnerabilidad mediante la gestión 
+                        integral de riesgos, incluyendo adaptación al cambio climático. Realiza actividades como diagnósticos 
+                        comunitarios, análisis de amenazas, alertas tempranas, mapas de riesgos, capacitación de brigadistas y 
+                        elaboración de planes de contingencia y emergencia. También se enfoca en la capacitación de la población, 
+                        voluntarios y técnicos.
+                    </p>
+            </div>
+        </section>
+
+        <section class="about-us"> 
+            <div class="us">
+                <h2><b>¿Que es un evento y una emergencia?</b></h2><br>
+            </div>  
+
+            <div class="evento">
+                <h3>Evento</h3>
+                <p>Un evento es algo que sucede repentinamente pero que su solución demanda acciones de personal capacitado 
+                    para la solución. Un evento, en el contexto de situaciones cotidianas que requieren la intervención del 
+                    Ministerio de Obras Públicas u otras autoridades similares.</p>
+                <ul>
+                    <li>Daño en una carretera</li>
+                    <li>Fuga en una tubería de agua</li>
+                    <li>Caída de árboles en la vía pública</li>
+                    <li>Hundimiento de aceras</li>
+                </ul>         
+            </div>
+
+            <div class="emergencia">
+                <h3>Emergencia</h3>
+                <p>Una emergencia es una situación crítica que surge como resultado de eventos climáticos extremos. 
+                    Estas emergencias pueden requerir una respuesta inmediata para proteger vidas, propiedades 
+                    y recursos.</p>
+                <ul>
+                    <li>Accidente de tráfico múltiple</li>
+                    <li>Deslizamientos de tierra</li>
+                    <li>Evacuación de inundación</li>
+                </ul>
+            </div>
+
+            <div class="advertencia">
+                <br><h3 class="titulo"><b>Advertencia:</b></h3>
+                <p id="nota">
+                    Si desea agregar su evento o emergencia usted deberá de registrarse e iniciar sesión,
+                    puede realizarlo dando click al siguiente boton:
+                </p>
+                <div>
+                    <button onclick="window.location.href='indexlogin.php'" class="btnsesion">
+                        <i class="fas fa-user"></i>Inicio de Sesión</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+   
+
+
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+    <script src="scripts/script_inicio.js"></script>
+    <script>
+        document.querySelector('.navbar-toggler').addEventListener('click', function () {
+            document.querySelector('#navbarNav').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

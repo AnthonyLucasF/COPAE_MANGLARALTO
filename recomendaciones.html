@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+    <title>Recomendaciones</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/style_Recomendaciones.css">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.css" />
+</head>
+
+<body>
+    <header class="header_section">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html">
+                    <span>COPAE</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="recomendaciones.html">Recomendaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="GestiondeRiesgo.html">Gestion de Riesgo</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2><label for="mochilaEmergencia">Mochila de Emergencia</label></h2>
+            <div class="info" id="mochilaEmergenciaInfo">
+                <img src="img/MochilaEmergencia.jpg" alt="Imagen de mochila de emergencia">
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><label for="Afiche_Inundacion">Afiche de Inundación</label></h2>
+            <div class="info" id="Afiche_InundacionInfo">
+                <img src="img/Afiche_inundacion.jpg" alt="Afiche_Inundacion">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><label for="Deslizamiento">Deslizamiento</label></h2>
+            <div class="info" id="DeslizamientoInfo">
+                <img src="img/Deslizamiento.jpg" alt="Deslizamiento">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><label for="mapaRiesgo">Mapa de Riesgo</label></h2>
+            <div class="info" id="mapaRiesgoInfo">
+                <img src="img/mapa.jpg" alt="mapaRiesgo">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><label for="planFamiliar">Plan Familiar</label></h2>
+            <div class="info" id="planFamiliarInfo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RHfnZlp6Vwk" frameborder="0" allowfullscreen></iframe>
+                <p><a href="https://www.youtube.com/embed/RHfnZlp6Vwk" id="planFamiliarLink" target="_blank">Ver Plan Familiar en YouTube</a></p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><label for="primerosAuxilios">Primeros Auxilios</label></h2>
+            <div class="info" id="primerosAuxiliosInfo">
+                <a href="#" id="primerosAuxiliosLink" target="_blank">Descargar Guía de Primeros Auxilios (PDF)</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+    <script src="scripts/script_Recomendaciones.js"></script>
+    <script>
+        document.querySelector('.navbar-toggler').addEventListener('click', function () {
+            document.querySelector('#navbarNav').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
+

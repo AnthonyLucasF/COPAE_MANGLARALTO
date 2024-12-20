@@ -1,0 +1,163 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../img_copae/8.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0; 
+    padding: 0;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+
+.container {
+    width: 80%;
+    max-width: 80%;
+    margin: 0 auto; 
+    padding: 20px;
+}   
+
+.welcome-banner {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 0.5s forwards;  
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+p{
+    color: #fff;
+}
+
+h2 {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.main-content {
+    width: 100%;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 0.5s forwards;  
+}
+
+.main-content h2{
+    margin-bottom: 50px;
+}
+
+
+.registrar-btn {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 15px 32px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    border: 1px solid #bebebe;
+}
+
+.registrar-btn i {
+    margin-right: 5px;
+} 
+
+.btn-danger {
+    border: none;
+    padding: 15px 32px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #dc3545;
+    color: white;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    border: 1px solid #bebebe;
+}
+
+.registrar-btn:hover, .btn-danger:hover {
+    background-color: #36704f;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 80%;
+    }
+    .welcome-banner {
+        width: 100%;
+        padding: 10px;
+    }
+    .main-content {
+        width: 100%;
+        padding: 10px;
+    }
+    .button {
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        width: 80%;
+    }
+    .welcome-banner {
+        width: 100%;
+        padding: 15px;
+    }
+    .main-content {
+        width: 100%;
+        padding: 10px;
+    }
+    .button {
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .container {
+        width: 80%;
+    }
+    .welcome-banner {
+        width: 100%;
+        padding: 15px;
+    }
+    .main-content {
+        width: 100%;
+        padding: 10px;
+    }
+    .button {
+        padding: 8px 16px;
+    }
+    
+}
+
